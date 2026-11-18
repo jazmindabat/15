@@ -166,6 +166,15 @@
          .section {
             padding: 105px 22px;
          }
+         /* Secciones impares (1, 3, 5...) */
+         .section:nth-child(odd) {
+           background-color: #ffffff;
+         }
+
+         /* Secciones pares (2, 4, 6...) */
+         .section:nth-child(even) {
+           background-color: #FFE0F0;
+         }
          .inner {
             width: min(100%, 1040px);
             margin: auto;
@@ -597,7 +606,7 @@
                </div>
             </div>
          </section>
-         <section class="section details">
+         <section class="section">
             <div class="inner">
                <div class="intro">
                   <div class="tiny-label">FIESTA</div>
@@ -619,7 +628,7 @@
                </div>
             </div>
          </section>
-         <section class="section details">
+         <section class="section">
             <div class="inner">
                <div class="intro">
                   <img src="dress.png" width="64" height="64" />
@@ -628,11 +637,11 @@
                </div>
             </div>
          </section>
-         <section class="section details">
+         <section class="section">
             <div class="inner">
                <div class="intro">
                   <div class="tiny-label">CONFIRMACION DE ASISTENCIA</div>
-                  <h2>Cuento con tu presencia.</h2>
+                  <h2>Cuento con tu presencia</h2>
                   <p>Clickeá abajo y confirmá tu asistencia. Y comentame también si tenés alguna restricción alimentaria.<br><br></p>
 
                   <div class="buttons">
@@ -647,26 +656,34 @@
                </div>
             </div>
          </section>
-         <section class="gift" aria-labelledby="gift-title">
-            <img src="instagram.png" width="64" height="64" />
-            <p>
-               <a
-               class="instagram-link"
-               href="http://instagram.com/jaz_dabat"
-               target="_blank"
-               rel="noopener noreferrer"
-               >Seguime en Instagram: @jaz_dabat ↗</a
-            > <br><br>
-               Seguime en mi cuenta de Instagram y etiquétame en tus fotos y videos.
-            </p>
+         <section class="section">
+            <div class="inner">
+               <div class="intro">
+                  <img src="instagram.png" width="64" height="64" />
+                  <p>
+                     <a
+                     class="instagram-link"
+                     href="http://instagram.com/jaz_dabat"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     >Seguime en Instagram: @jaz_dabat ↗</a
+                  > <br><br>
+                     Seguime en mi cuenta de Instagram y etiquétame en tus fotos y videos.
+                  </p>
+               </div>   
+            </div>
          </section>
-         <section class="gift" aria-labelledby="gift-title">
-            <img src="gift.png" width="64" height="64" />
-            <h2 id="gift-title">Regalo</h2>
-            <p>
-               Lo más importante para mí es compartir esta noche con vos. Si deseás hacerme un regalo, podés hacerlo a: 
-            </p>
-            <div class="gift-alias">jaz.dabat</div>
+         <section class="section" aria-labelledby="gift-title">
+            <div class="inner">
+               <div class="intro">
+                  <img src="gift.png" width="64" height="64" />
+                  <h2 id="gift-title">Regalo</h2>
+                  <p>
+                     Lo más importante para mí es compartir esta noche con vos. Si deseás hacerme un regalo, podés hacerlo a: 
+                  </p>
+                  <div class="gift-alias">jaz.dabat</div>
+               </div>
+            </div>
          </section>
       </main>
       <footer>¡Gracias por acompañarme en este momento tan importante!
